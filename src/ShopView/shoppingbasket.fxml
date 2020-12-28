@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="957.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ShopView.BasketController">
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="59.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="BuyBtn" mnemonicParsing="false" style="-fx-background-color: black;" text="장바구니 비우기" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="CancelBtn" mnemonicParsing="false" style="-fx-background-color: black;" text="쇼핑 계속하기" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <FlowPane prefHeight="30.0" prefWidth="972.0" style="-fx-background-color: BLACK;" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane alignment="TOP_CENTER" prefHeight="28.0" prefWidth="957.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="414.0" minWidth="10.0" prefWidth="306.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="190.0" minWidth="0.0" prefWidth="108.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" prefHeight="36.0" prefWidth="370.0" text="색상" textFill="WHITE" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="36.0" prefWidth="370.0" text="상품" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="36.0" prefWidth="370.0" text="사이즈" textFill="WHITE" GridPane.columnIndex="2">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="36.0" prefWidth="370.0" text="가격" textFill="WHITE" GridPane.columnIndex="3">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="36.0" prefWidth="370.0" text="수량" textFill="WHITE" GridPane.columnIndex="4">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="36.0" prefWidth="370.0" text="합계" textFill="WHITE" GridPane.columnIndex="5">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+         </children>
+      </FlowPane>
+   </top>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <Label fx:id="PrdName1" prefHeight="141.0" prefWidth="165.0" text="PrdName" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>
